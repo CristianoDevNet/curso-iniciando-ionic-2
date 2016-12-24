@@ -5,6 +5,7 @@ import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
 import {MenuTestPage} from './pages/menu-test/menu-test';
 import {AlertPage} from './pages/alert/alert';
+import {ButtonsTestPage} from './pages/buttons-test/buttons-test';
 //Other resources
 import {GeneratorTestPage} from './pages/generator-test/generator-test';
 import {ConnectionService} from './providers/connection-service/connection-service';
@@ -24,7 +25,8 @@ export class MyApp {
       {component: HomePage, title: "Home", icon: "home"},
       {component: MenuTestPage, title: "Menu Test", icon: "menu"},
       {component: GeneratorTestPage, title: "Generator Test", icon: "analytics"},
-      {component: AlertPage, title: "Alert Page", icon: "alert"}
+      {component: AlertPage, title: "Alert Page", icon: "alert"},
+      {component: ButtonsTestPage, title: "Buttons Test", icon: "code-download"}
     ];
 
     platform.ready().then(() => {
