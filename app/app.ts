@@ -1,8 +1,11 @@
 import {Component} from '@angular/core';
 import {Platform, ionicBootstrap, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
+//Pages
 import {HomePage} from './pages/home/home';
 import {MenuTestPage} from './pages/menu-test/menu-test';
+import {AlertPage} from './pages/alert/alert';
+//Other resources
 import {GeneratorTestPage} from './pages/generator-test/generator-test';
 import {ConnectionService} from './providers/connection-service/connection-service';
 
@@ -20,7 +23,8 @@ export class MyApp {
     this.pages = [
       {component: HomePage, title: "Home", icon: "home"},
       {component: MenuTestPage, title: "Menu Test", icon: "menu"},
-      {component: GeneratorTestPage, title: "Generator Test", icon: "analytics"}
+      {component: GeneratorTestPage, title: "Generator Test", icon: "analytics"},
+      {component: AlertPage, title: "Alert Page", icon: "alert"}
     ];
 
     platform.ready().then(() => {
