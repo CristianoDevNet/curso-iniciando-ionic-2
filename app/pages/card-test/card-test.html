@@ -1,0 +1,54 @@
+
+<ion-navbar *navbar>
+  <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>card-test</ion-title>
+  <ion-buttons right>
+      <button menuToggle="right">
+        <ion-icon name="mail"></ion-icon>
+      </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-content class="card-test">
+  <ion-card>
+    <ion-card-header>Ionic 2</ion-card-header>
+    <ion-card-content>
+      <p>Olá mundo!</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <img src="./../../images/cris.png" alt="">
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-card-title>Ionic 2</ion-card-title>
+      <p>Olá mundo!</p>
+    </ion-card-content>
+
+    <hr>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button clear small>
+          <ion-icon name="star"></ion-icon>
+          favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button clear small>
+          <ion-icon name="musical-notes"></ion-icon>
+          listen
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button clear small>
+          <ion-icon name="share"></ion-icon>
+          share
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
