@@ -7,6 +7,7 @@ import {MenuTestPage} from './pages/menu-test/menu-test';
 import {AlertPage} from './pages/alert/alert';
 import {ButtonsTestPage} from './pages/buttons-test/buttons-test';
 import {CardTestPage} from './pages/card-test/card-test';
+import {InputsTestPage} from './pages/inputs-test/inputs-test';
 //Other resources
 import {GeneratorTestPage} from './pages/generator-test/generator-test';
 import {ConnectionService} from './providers/connection-service/connection-service';
@@ -28,7 +29,8 @@ export class MyApp {
       {component: GeneratorTestPage, title: "Generator Test", icon: "analytics"},
       {component: AlertPage, title: "Alert Page", icon: "alert"},
       {component: ButtonsTestPage, title: "Buttons Test", icon: "code-download"},
-      {component: CardTestPage, title: "Card Test", icon: "card"}
+      {component: CardTestPage, title: "Card Test", icon: "card"},
+      {component: InputsTestPage, title: "Inputs Test", icon: "bonfire"}
     ];
 
     platform.ready().then(() => {
@@ -45,10 +47,10 @@ export class MyApp {
 }
 
 ionicBootstrap(MyApp, [ConnectionService], {
-  menuType: 'push',
-  platforms: {
-    ios: {
-      menuType: 'overlay',
-    }
-  }
+  // menuType: 'push',
+  // platforms: {
+  //   ios: {
+  //     menuType: 'overlay',
+  //   }
+  // }
 });
