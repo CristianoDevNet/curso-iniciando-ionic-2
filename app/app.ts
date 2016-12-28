@@ -9,6 +9,7 @@ import {ButtonsTestPage} from './pages/buttons-test/buttons-test';
 import {CardTestPage} from './pages/card-test/card-test';
 import {InputsTestPage} from './pages/inputs-test/inputs-test';
 import {ListTestPage} from './pages/list-test/list-test';
+import {GridTestPage} from './pages/grid-test/grid-test';
 //Other resources
 import {GeneratorTestPage} from './pages/generator-test/generator-test';
 import {ConnectionService} from './providers/connection-service/connection-service';
@@ -32,7 +33,8 @@ export class MyApp {
       {component: ButtonsTestPage, title: "Buttons Test", icon: "code-download"},
       {component: CardTestPage, title: "Card Test", icon: "card"},
       {component: InputsTestPage, title: "Inputs Test", icon: "bonfire"},
-      {component: ListTestPage, title: "List Test", icon: "list-box"}
+      {component: ListTestPage, title: "List Test", icon: "list-box"},
+      {component: GridTestPage, title: "Grid Test", icon: "apps"}
     ];
 
     platform.ready().then(() => {
