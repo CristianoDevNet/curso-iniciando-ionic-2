@@ -10,6 +10,7 @@ import {CardTestPage} from './pages/card-test/card-test';
 import {InputsTestPage} from './pages/inputs-test/inputs-test';
 import {ListTestPage} from './pages/list-test/list-test';
 import {GridTestPage} from './pages/grid-test/grid-test';
+import {ModalTestPage} from './pages/modal-test/modal-test';
 //Other resources
 import {GeneratorTestPage} from './pages/generator-test/generator-test';
 import {ConnectionService} from './providers/connection-service/connection-service';
@@ -34,7 +35,8 @@ export class MyApp {
       {component: CardTestPage, title: "Card Test", icon: "card"},
       {component: InputsTestPage, title: "Inputs Test", icon: "bonfire"},
       {component: ListTestPage, title: "List Test", icon: "list-box"},
-      {component: GridTestPage, title: "Grid Test", icon: "apps"}
+      {component: GridTestPage, title: "Grid Test", icon: "apps"},
+      {component: ModalTestPage, title: "Modal Test", icon: "chatboxes"}
     ];
 
     platform.ready().then(() => {
